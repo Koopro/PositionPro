@@ -1,0 +1,15 @@
+name: PositionPro
+version: '${project.version}'
+main: at.koopro.positionpro.PositionPro
+api-version: '1.20'
+commands:
+  playerinfo:
+    description: Displays information about a player.
+    usage: /<command> <playerName|uuid>
+    permission: positionpro.admin.playerinfo
+    permission-message: You do not have permission to view player info.
+  role:
+    description: Manage player roles.
+    usage: /<command> <add|remove> <playerName> <roleName>
+    permission: positionpro.admin.role
+    permission-message: You do not have permission to manage roles.
